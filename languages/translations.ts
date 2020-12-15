@@ -1,5 +1,7 @@
 const translations = {
   ru: {
+    title: 'Юденич Александр. Фронтенд разработчик. Портфолио.',
+    description: 'Юденич Александр. Фронтенд разработчик. Портфолио.',
     themeSwitcher: {
       label: 'Тёмная тема',
     },
@@ -24,7 +26,7 @@ const translations = {
         {
           link: '#skills',
           text: 'Навыки',
-        },      
+        },
         {
           link: '#certificates',
           text: 'Сертификаты',
@@ -114,7 +116,8 @@ const translations = {
           imageURL: '/images/portfolio/chat-rooms.jpg',
           link: 'https://chat-rooms.yudenichaa.vercel.app/',
           title: 'Чат',
-          description: 'Создание комнат и обмен сообщениями в режиме реального времени. Для аутентификации пользователей используется «Firebase authentication». В качестве метода аутентификации используется почта. Для хранения сообщений используется «Firebase cloud firestore».',
+          description:
+            'Создание комнат и обмен сообщениями в режиме реального времени. Для аутентификации пользователей используется «Firebase authentication». В качестве метода аутентификации используется почта. Для хранения сообщений используется «Firebase cloud firestore».',
           technologies: [
             'React',
             'TypeScript',
@@ -134,7 +137,8 @@ const translations = {
           imageURL: '/images/portfolio/covid-tracker.jpg',
           link: 'https://covid-tracker.yudenichaa.vercel.app/ ',
           title: 'Трекер Covid-19 ',
-          description: 'Отслеживание количества заболевших, выздоровевших и смертельных исходов. Данные доступны в виде таблицы, графика и карты. Доступен просмотр данных для определённой страны или по всему миру.',
+          description:
+            'Отслеживание количества заболевших, выздоровевших и смертельных исходов. Данные доступны в виде таблицы, графика и карты. Доступен просмотр данных для определённой страны или по всему миру.',
           technologies: [
             'React',
             'JavaScript',
@@ -156,7 +160,8 @@ const translations = {
           imageURL: '/images/portfolio/instagram-posts.jpg',
           link: 'https://instagram-posts.yudenichaa.vercel.app/',
           title: 'Посты в инстаграм',
-          description: 'Добавление публикаций в режиме реального времени. Публикации содержат изображение, описание и комментарии. Для аутентификации пользователей используется «Firebase authentication». В качестве метода аутентификации используется почта. Для хранения изображений и сообщений используется «Firebase cloud firestore» и «Firebase storage».',
+          description:
+            'Добавление публикаций в режиме реального времени. Публикации содержат изображение, описание и комментарии. Для аутентификации пользователей используется «Firebase authentication». В качестве метода аутентификации используется почта. Для хранения изображений и сообщений используется «Firebase cloud firestore» и «Firebase storage».',
           technologies: [
             'React',
             'JavaScript',
@@ -176,7 +181,8 @@ const translations = {
           imageURL: '/images/portfolio/netflix-movies.jpg',
           link: 'https://netflix-movies.yudenichaa.vercel.app',
           title: 'Фильмы Netflix',
-          description: 'Просмотр популярных фильмов в различных категориях. Фильмы отображаются в виде ленты, пролистывание которой осуществляется при помощи мыши или жестов. Для поиска трейлера фильма используется библиотека «movie-trailer». Для показа трейлера используется библиотека «react-youtube».',
+          description:
+            'Просмотр популярных фильмов в различных категориях. Фильмы отображаются в виде ленты, пролистывание которой осуществляется при помощи мыши или жестов. Для поиска трейлера фильма используется библиотека «movie-trailer». Для показа трейлера используется библиотека «react-youtube».',
           technologies: [
             'React',
             'TypeScript',
@@ -195,7 +201,8 @@ const translations = {
           imageURL: '/images/portfolio/image-gallery.jpg',
           link: 'https://image-gallery.yudenichaa.vercel.app/',
           title: 'Галерея изображений',
-          description: 'Для каждого пользователя отображается список его альбомов с изображениями. При клике на изображении оно открывается в модальном окне, содержащем изображение в большем разрешении и миниатюры из данного альбома. В качестве источника данных используется сервис «jsonplaceholder».',
+          description:
+            'Для каждого пользователя отображается список его альбомов с изображениями. При клике на изображении оно открывается в модальном окне, содержащем изображение в большем разрешении и миниатюры из данного альбома. В качестве источника данных используется сервис «jsonplaceholder».',
           technologies: [
             'React',
             'JavaScript',
@@ -213,7 +220,8 @@ const translations = {
           imageURL: '/images/portfolio/adyax.jpg',
           link: 'https://adyax.yudenichaa.vercel.app',
           title: 'Adyax',
-          description: 'Форма обратной связи, содержащая кастомные элементы ввода, такие как «выбор файла», «чекбоксы» и «радиокнопки».',
+          description:
+            'Форма обратной связи, содержащая кастомные элементы ввода, такие как «выбор файла», «чекбоксы» и «радиокнопки».',
           technologies: ['JavaScript', 'HTML', 'SCSS'],
           sources: {
             link: 'https://github.com/yudenichaa/adyax',
@@ -295,6 +303,8 @@ const translations = {
     ],
   },
   en: {
+    title: 'Yudenich Alexandr. Frontend developer. Portfolio.',
+    description: 'Yudenich Alexandr. Frontend developer. Portfolio.',
     themeSwitcher: {
       label: 'Dark theme',
     },
@@ -319,7 +329,7 @@ const translations = {
         {
           link: '#skills',
           text: 'Skills',
-        },   
+        },
         {
           link: '#certificates',
           text: 'Certificates',
@@ -409,7 +419,8 @@ const translations = {
           imageURL: '/images/portfolio/chat-rooms.jpg',
           link: 'https://chat-rooms.yudenichaa.vercel.app/',
           title: 'Chat',
-          description: 'Creating rooms and exchange messages in real time. For user authentication, "Firebase authentication" is used. Mail is used as an authentication method. "Firebase cloud firestore" is used to store messages.',
+          description:
+            'Creating rooms and exchange messages in real time. For user authentication, "Firebase authentication" is used. Mail is used as an authentication method. "Firebase cloud firestore" is used to store messages.',
           technologies: [
             'React',
             'TypeScript',
@@ -429,7 +440,8 @@ const translations = {
           imageURL: '/images/portfolio/covid-tracker.jpg',
           link: 'https://covid-tracker.yudenichaa.vercel.app/ ',
           title: 'Covid-19 tracker',
-          description: 'Tracking the number of cases, recovered and deaths. Data is available in the form of table, graph and map. Available to view data for a specific country or around the world.',
+          description:
+            'Tracking the number of cases, recovered and deaths. Data is available in the form of table, graph and map. Available to view data for a specific country or around the world.',
           technologies: [
             'React',
             'JavaScript',
@@ -451,7 +463,8 @@ const translations = {
           imageURL: '/images/portfolio/instagram-posts.jpg',
           link: 'https://instagram-posts.yudenichaa.vercel.app/',
           title: 'Instagram posts',
-          description: 'Adding publications in real time. The publications contain an image, description and comments. For user authentication, "Firebase authentication" is used. Mail is used as an authentication method. For storing images and messages, "Firebase cloud firestore" and "Firebase storage" are used.',
+          description:
+            'Adding publications in real time. The publications contain an image, description and comments. For user authentication, "Firebase authentication" is used. Mail is used as an authentication method. For storing images and messages, "Firebase cloud firestore" and "Firebase storage" are used.',
           technologies: [
             'React',
             'JavaScript',
@@ -471,7 +484,8 @@ const translations = {
           imageURL: '/images/portfolio/netflix-movies.jpg',
           link: 'https://netflix-movies.yudenichaa.vercel.app',
           title: 'Netflix movies',
-          description: 'View popular movies in various categories. Movies are displayed in the form of a tape, scrolling through which you can use the mouse or gestures. The "movie-trailer" library is used to search for a movie trailer. The "react-youtube" library is used to show the trailer.',
+          description:
+            'View popular movies in various categories. Movies are displayed in the form of a tape, scrolling through which you can use the mouse or gestures. The "movie-trailer" library is used to search for a movie trailer. The "react-youtube" library is used to show the trailer.',
           technologies: [
             'React',
             'TypeScript',
@@ -490,7 +504,8 @@ const translations = {
           imageURL: '/images/portfolio/image-gallery.jpg',
           link: 'https://image-gallery.yudenichaa.vercel.app/',
           title: 'Image gallery',
-          description: 'For each user, a list of their picture albums is displayed. When you click on an image, it opens in a modal window containing a higher resolution image and thumbnails from this album. The "jsonplaceholder" service is used as a data source.',
+          description:
+            'For each user, a list of their picture albums is displayed. When you click on an image, it opens in a modal window containing a higher resolution image and thumbnails from this album. The "jsonplaceholder" service is used as a data source.',
           technologies: [
             'React',
             'JavaScript',
@@ -508,7 +523,8 @@ const translations = {
           imageURL: '/images/portfolio/adyax.jpg',
           link: 'https://adyax.yudenichaa.vercel.app',
           title: 'Adyax',
-          description: 'A feedback form containing custom input elements such as "file selection", "checkboxes" and "radio buttons".',
+          description:
+            'A feedback form containing custom input elements such as "file selection", "checkboxes" and "radio buttons".',
           technologies: ['JavaScript', 'HTML', 'SCSS'],
           sources: {
             link: 'https://github.com/yudenichaa/adyax',

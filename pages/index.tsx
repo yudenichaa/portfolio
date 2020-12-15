@@ -9,7 +9,10 @@ import { GetStaticProps } from 'next';
 import { locales } from '../locales.json';
 
 interface IHome {
-  translation: string;
+  translation: {
+    title: string;
+    description: string;
+  };
 }
 
 export default function Home({ translation }: IHome) {
@@ -23,11 +26,8 @@ export default function Home({ translation }: IHome) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Yudenich Alexandr &#8212; Portfolio</title>
-        <meta
-          name="description"
-          content="Yudenich Alexandr. Frontend developer. Portfolio."
-        />
+        <title>{translation.title}</title>
+        <meta name="description" content={translation.description} />
         <link rel="icon" href="/images/favicon.png" type="image/png" />
         {Object.keys(locales).map((locale) => (
           <link
