@@ -1,0 +1,109 @@
+@keyframes intro__line {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes intro__name {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes intro__proffesion {
+  from {
+    transform: translateY(-100%);
+    line-height: 1.5;
+  }
+  to {
+    transform: translateY(0);
+    line-height: 1;
+  }
+}
+
+.intro {
+  &_light {
+    background-color: #f2f2f2;
+    color: #000000;
+  }
+
+  &_dark {
+    background-color: #222222;
+    color: #e6e6e6;
+  }
+  transition-property: background-color, color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    width: fit-content;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  &__line {
+    &_light {
+      background-color: #36413e;
+    }
+
+    &_dark {
+      background-color: #d1d1d1;
+    }
+    transition: background-color 0.4s ease-in-out;
+
+    margin: auto;
+    border: none;
+    border-radius: 2px;
+    background-color: #36413e;
+    height: 3px;
+    animation: intro__line 0.75s linear;
+    animation-fill-mode: forwards;
+  }
+
+  &__name-container {
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  &__name {
+    font-family: 'Montserrat', sans-serif;
+    transform: translateY(100%);
+    animation: intro__name 0.35s linear 0.75s;
+    animation-fill-mode: forwards;
+    font-size: 2.5rem;
+
+    @media screen and (min-width: 576px) {
+      font-size: 5rem;
+    }
+  }
+
+  &__proffesion-container {
+    overflow: hidden;
+    margin-top: 0.5rem;
+  }
+
+  &__profession {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    transform: translateY(-100%);
+    animation: intro__proffesion 0.35s linear 0.75s;
+    animation-fill-mode: forwards;
+
+    @media screen and (min-width: 576px) {
+      font-size: 3.6rem;
+    }
+  }
+}

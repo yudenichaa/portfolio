@@ -1,0 +1,48 @@
+@keyframes header {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header {
+  
+  opacity: 0;
+  animation: header 0.5s ease 1.1s;
+  animation-fill-mode: forwards;
+
+  position: absolute;
+  width: 100%;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1300px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__controls {
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    row-gap: 1rem;
+    column-gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    @media screen and (min-width: 400px) {
+      grid-auto-flow: column; 
+    }
+
+    @media screen and (min-width: 1300px) {
+      margin-bottom: 0;
+    }
+  }
+
+  
+}

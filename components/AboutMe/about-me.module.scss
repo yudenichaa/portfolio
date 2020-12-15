@@ -1,0 +1,53 @@
+.about-me {
+  &_light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  &_dark {
+    background-color: #2b2b2b;
+    color: #dfdfdf;
+  }
+  transition-property: background-color, color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+
+  &__content {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media screen and (min-width: 1400px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  &__text {
+    @media screen and (min-width: 1400px) {
+      margin-right: 5rem;
+    }
+  }
+
+  &__p {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  &__photo {
+    width: 100%;
+    max-width: 536px;
+    margin: 0 auto 3rem auto;
+    object-fit: contain;
+    object-position: top;
+
+    @media screen and (min-width: 1400px) {
+      margin-bottom: 0;
+    }
+  }
+}

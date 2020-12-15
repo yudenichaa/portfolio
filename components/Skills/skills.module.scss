@@ -1,0 +1,49 @@
+.skills {
+  &_light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  &_dark {
+    background-color: #2b2b2b;
+    color: #dfdfdf;
+  }
+  transition-property: background-color, color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+
+  &__content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 8rem);
+    gap: 1rem;
+  }
+
+  &__skill {
+    &_light {
+      background-color: #ffffff;
+    }
+
+    &_dark {
+      background-color: #444444;
+    }
+    transition: background-color 0.4s ease-in-out;
+
+    width: 8rem;
+    height: 8rem;
+    border: 0.1rem solid #636363;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  &__skill-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
