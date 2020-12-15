@@ -5,5 +5,6 @@ module.exports = {
   i18n: {
     locales: Object.keys(locales),
     defaultLocale: defaultLocale,
+    localeDetection: false,
   },
 };
