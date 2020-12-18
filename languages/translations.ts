@@ -407,7 +407,7 @@ const translations = {
           period: 'October 2020 - Until now',
           title: 'Magic Digital Agency',
           description:
-            'Development of components for an interactive learning platform (React). Responsive page layout according to the maquette.',
+            'Development of components for an interactive learning platform. Responsive page layout according to the maquette.',
         },
       ],
     },
