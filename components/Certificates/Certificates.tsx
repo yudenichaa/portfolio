@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import TranslationContext from '../../context/TranslationContext';
 import ThemeContext from '../../context/ThemeContext';
 import { default as cn } from 'classnames';
+import Image from 'next/image';
 
 const Certificates: React.FC = () => {
   const translation = useContext(TranslationContext);
@@ -10,14 +11,12 @@ const Certificates: React.FC = () => {
   return (
     <div
       id="certificates"
-      className={cn(styles.certificates, "padding-container", {
+      className={cn(styles.certificates, 'padding-container', {
         [styles.certificates_light]: theme == 'light',
         [styles.certificates_dark]: theme == 'dark',
       })}
     >
-      <h2 className="caption">
-        {translation.certificates.caption}
-      </h2>
+      <h2 className="caption">{translation.certificates.caption}</h2>
       <div className={styles.certificates__content}>
         {translation.certificates.certificatesList.map((certificate) => (
           <div
@@ -28,9 +27,11 @@ const Certificates: React.FC = () => {
             })}
           >
             <a href={certificate.link} target="_blank">
-              <img
+              <Image
                 className={styles.certificates__image}
                 src={certificate.imageURL}
+                width={576}
+                height={445}
                 alt={`Certificate: ${certificate.title}`}
               />
             </a>

@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import TranslationContext from '../../context/TranslationContext';
 import ThemeContext from '../../context/ThemeContext';
 import { default as cn } from 'classnames';
+import Image from 'next/image';
 
 const Portfolio = () => {
   const translation = useContext(TranslationContext);
@@ -10,14 +11,12 @@ const Portfolio = () => {
   return (
     <div
       id="portfolio"
-      className={cn(styles.portfolio, "padding-container", {
+      className={cn(styles.portfolio, 'padding-container', {
         [styles.portfolio_light]: theme == 'light',
         [styles.portfolio_dark]: theme == 'dark',
       })}
     >
-      <h2 className="caption">
-        {translation.portfolio.caption}
-      </h2>
+      <h2 className="caption">{translation.portfolio.caption}</h2>
       <div className={styles.portfolio__content}>
         {translation.portfolio.portfolioList.map((portfolioItem) => (
           <div
@@ -28,9 +27,11 @@ const Portfolio = () => {
             })}
           >
             <a href={portfolioItem.link} target="_blank">
-              <img
+              <Image
                 className={styles['portfolio__item-image']}
                 src={portfolioItem.imageURL}
+                width={576}
+                height={360}
                 alt={portfolioItem.title}
               />
             </a>
