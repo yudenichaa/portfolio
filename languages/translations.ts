@@ -3,7 +3,8 @@ const translations = {
     title: 'Юденич Александр. Фронтенд разработчик. Портфолио.',
     description: 'Юденич Александр. Фронтенд разработчик. Портфолио.',
     themeSwitcher: {
-      label: 'Тёмная тема',
+      lightIconAlt: 'Иконка светлой темы сайта',
+      darkIconAlt: 'Иконка тёмной темы сайта',
     },
     languageSwitcher: {
       iconAlt: 'Иконка смены языка сайта',
@@ -306,7 +307,8 @@ const translations = {
     title: 'Yudenich Alexandr. Frontend developer. Portfolio.',
     description: 'Yudenich Alexandr. Frontend developer. Portfolio.',
     themeSwitcher: {
-      label: 'Dark theme',
+      lightIconAlt: 'Light theme icon',
+      darkIconAlt: 'Dark theme icon',
     },
     languageSwitcher: {
       iconAlt: 'Website language change icon',

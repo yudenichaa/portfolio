@@ -1,3 +1,10 @@
+$theme-swithcher-height: 2rem;
+$theme-switcher-padding: 0.25rem;
+$theme-switcher-ball-size: $theme-swithcher-height - $theme-switcher-padding * 2;
+$theme-switcher-width: $theme-switcher-ball-size * 2 + $theme-switcher-padding *
+  2;
+$theme-switcher-border-radius: $theme-swithcher-height / 2;
+
 .theme-switcher {
   &_light {
     color: #000000;
@@ -11,10 +18,26 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 0.4rem;
   align-items: center;
   position: relative;
   user-select: none;
+
+  &__icon {
+    &_light {
+      filter: invert(0);
+    }
+
+    &_dark {
+      filter: invert(1);
+    }
+    transition: filter 0.25s ease-in-out;
+
+    width: 1.25rem;
+    height: 1.25rem;
+  }
 
   &__checkbox {
     cursor: pointer;
@@ -26,48 +49,35 @@
 
   &__background {
     &_light {
-      background-color: #f2f2f2;
+      background-color: #858585;
     }
 
     &_dark {
-      background-color: #424242;
+      background-color: #e4e4e4;
     }
     transition: background-color 0.25s ease-in-out;
-
-    box-sizing: content-box;
-    min-width: 4rem;
-    min-height: 2rem;
-    background-color: #f2f2f2;
-    border: 0.05rem solid #afafaf;
-    border-radius: 1rem;
-    margin-right: 0.5rem;
+    height: $theme-swithcher-height;
+    width: $theme-switcher-width;
+    border-radius: $theme-switcher-border-radius;
+    padding: $theme-switcher-padding;
   }
 
   &__ball {
     &_light {
-      background-color: #424242;
-      color: #f2f2f2;
+      background-color: #ebebeb;
     }
 
     &_dark {
       transform: translateX(100%);
-      background-color: #f2f2f2;
-      color: #424242;
+      background-color: #6e6e6e;
     }
-    transition-property: transform, background-color, color;
+    transition-property: transform, background-color;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
 
     cursor: pointer;
-    width: 2rem;
-    height: 2rem;
+    width: $theme-switcher-ball-size;
+    height: $theme-switcher-ball-size;
     border-radius: 50%;
-    background-color: #424242;
-    line-height: 2rem;
-    text-align: center;
-    color: #f2f2f2;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
   }
 }
