@@ -10,7 +10,7 @@ const Contacts: React.FC = () => {
   return (
     <div
       id="contacts"
-      className={cn(styles.contacts, "padding-container", {
+      className={cn(styles.contacts, 'padding-container', {
         [styles.contacts_light]: theme == 'light',
         [styles.contacts_dark]: theme == 'dark',
       })}

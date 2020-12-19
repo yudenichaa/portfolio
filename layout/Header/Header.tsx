@@ -3,7 +3,6 @@ import LanguageSwitcher from '../../components/LanguageSwitcher';
 import ThemeSwitcher from '../../components/ThemeSwitcher';
 import Navigation from '../../components/Navigation';
 
-
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>

@@ -10,7 +10,7 @@ const AboutMe: React.FC = () => {
   return (
     <div
       id="aboutMe"
-      className={cn(styles['about-me'], "padding-container", {
+      className={cn(styles['about-me'], 'padding-container', {
         [styles['about-me_light']]: theme == 'light',
         [styles['about-me_dark']]: theme == 'dark',
       })}
