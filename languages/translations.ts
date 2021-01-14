@@ -102,10 +102,16 @@ const translations = {
             'Адаптивная вёрстка страниц согласно макету. Разработка плагинов для программы «AutoCAD».',
         },
         {
-          period: 'Октябрь 2020 - По настоящее время',
+          period: 'Октябрь 2020 - Январь 2021',
           title: 'Magic Digital Agency',
           description:
             'Разработка компонентов для интерактивной обучающей платформы. Адаптивная вёрстка страниц согласно макету.',
+        },
+        {
+          period: 'Январь 2021 - По настоящее время',
+          title: 'Izzy Agency',
+          description:
+            'Разработка компонентов, адаптивная вёрстка страниц согласно макету.',
         },
       ],
     },
@@ -406,10 +412,16 @@ const translations = {
             'Responsive page layout according to the maquette. Plugin development for AutoCAD program.',
         },
         {
-          period: 'October 2020 - Until now',
+          period: 'October 2020 - January 2021',
           title: 'Magic Digital Agency',
           description:
             'Development of components for an interactive learning platform. Responsive page layout according to the maquette.',
+        },
+        {
+          period: 'January 2021 - Until now',
+          title: 'Izzy Agency',
+          description:
+            'Development of components. Responsive page layout according to the maquette.',
         },
       ],
     },
